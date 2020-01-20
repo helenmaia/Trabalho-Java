@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="painelP" prefHeight="450.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.AlunoTabelasController">
+    <children>
+        <TableView fx:id="tableAluno" prefHeight="305.0" prefWidth="814.0">
+            <columns>
+                <TableColumn fx:id="coId" minWidth="8.0" prefWidth="50.0" text="Id" />
+                <TableColumn fx:id="colMatricula" minWidth="8.0" prefWidth="99.0" text="Matricula" />
+                <TableColumn fx:id="colAluno" prefWidth="273.0" text="Nome" />
+                <TableColumn fx:id="colEmail" minWidth="0.0" prefWidth="244.0" text="Email" />
+               <TableColumn fx:id="colNascimento" maxWidth="500.0" minWidth="0.0" prefWidth="147.0" text="Data de Nascimento" />
+            </columns>
+        </TableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="366.0" text="Nome:" textFill="BLACK">        
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="245.0" layoutY="314.0" text="Email" textFill="BLACK">
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="245.0" layoutY="366.0" text="Data de Nascimento:" textFill="BLACK">
+      </Label>
+       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="314.0" text="Maricula" textFill="BLACK">
+      </Label>   
+      <Label fx:id="lbId" layoutX="418.0" layoutY="339.0" visible="false" />
+      <Button fx:id="btnCancel" layoutX="465.0" layoutY="386.0" mnemonicParsing="false" onMouseClicked="#cancelar" prefHeight="0.0" prefWidth="98.0" style="-fx-background-color: #35d0bb;" text="Cancelar ✘" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="btnSave" layoutX="465.0" layoutY="334.0" mnemonicParsing="false" onMouseClicked="#salvar" prefHeight="0.0" prefWidth="98.0" style="-fx-background-color: #35d0bb;" text="Salvar ✔" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="btnDelete" layoutX="825.0" layoutY="119.0" mnemonicParsing="false" onMouseClicked="#deletar" prefHeight="1.0" prefWidth="111.0" style="-fx-background-color: #35d0bb;" text="Deletar ❌" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="btnEdit" layoutX="825.0" layoutY="67.0" mnemonicParsing="false" onMouseClicked="#modificar" prefHeight="2.0" prefWidth="111.0" style="-fx-background-color: #35d0bb;" text="Editar 📄" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="btnAdicionar" layoutX="825.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#add" prefHeight="0.0" prefWidth="111.0" style="-fx-background-color: #35d0bb;" text="Adicionar ➕" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <TextField fx:id="campoMatricula" layoutX="28.0" layoutY="334.0" prefHeight="27.0" prefWidth="180.0" />
+      <TextField fx:id="campoNome" layoutX="28.0" layoutY="388.0" prefHeight="27.0" prefWidth="180.0" />
+      <TextField fx:id="campoEmail" layoutX="245.0" layoutY="336.0" prefHeight="27.0" prefWidth="192.0" />
+      <TextField fx:id="campoDataNascimento" layoutX="245.0" layoutY="388.0" prefHeight="27.0" prefWidth="192.0" />
+      <Label fx:id="lblVoltar" layoutX="873.0" layoutY="375.0" onMouseClicked="#principal" prefHeight="59.0" prefWidth="44.0" text="⬅" textFill="#35d0bb">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
